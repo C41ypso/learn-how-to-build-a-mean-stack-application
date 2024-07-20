@@ -2,7 +2,7 @@ version: '3.7'
 services:
 # REST API running on Node JS container
 app:
-container_name: lafs-api
+container_name: 
 restart: always
 build: .
 ports:
@@ -19,7 +19,7 @@ mongo:
 container_name: lafs-db
 image: 'mongo:4'
 ports:
-- '27017:27017'
+- '27017'
 # Attach the external network to these containers
 networks:
 default:
